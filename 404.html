@@ -7,7 +7,9 @@
   <body>
     <script>
       const path = window.location.pathname
-      window.location.href = `${window.location.origin}/index.html?url=${encodeURIComponent(path)}`
+      window.location.replace(
+        `${window.location.origin}/index.html?url=${encodeURIComponent(path)}`,
+      )
     </script>
   </body>
 </html>
